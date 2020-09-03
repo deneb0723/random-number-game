@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Random number game</title>
+  </head>
+  <body>
+    <h1>Random Number Game</h1>
+    <h3>Generate a number between 0 and</h3>
+    <h3 class="maxCount">100</h3>
+    <div>
+      <form>
+        <!-- 레인지 인풋 생성 -->
+        <input
+          type="range"
+          min="0"
+          max="200"
+          name=""
+          list="steplist"
+          id="js-range"
+        />
+        <!-- 틱 생성 -->
+        <datalist id="steplist">
+          <option value="40"></option>
+          <option value="80"></option>
+          <option value="120"></option>
+          <option value="160"></option>
+          <option value="200"></option>
+        </datalist>
+      </form>
+    </div>
+    <form>
+      <span>Guess the number:</span>
+      <input type="number" name="" id="js-input" />
+      <button type="button" id="js-submit">Play!</button>
+    </form>
+    <div class="gameResult">
+      <div>
+        <span class="chooseNum"></span>
+        <span class="randomNum"></span>
+      </div>
+      <span class="result"></span>
+    </div>
+    <script src="index.js"></script>
+  </body>
+</html>
